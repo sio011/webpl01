@@ -1,0 +1,117 @@
+header {
+    text-align: center;
+    background-image: url('./img/2abge.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+#form1 {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+/* 入力フォーム */
+#sbox2 {
+    width: 250px;
+    padding: 0 15px;
+    border-radius: 4px 0 0 4px;
+    background: transparent;
+    border: 2px solid #8694a2;
+    border-right: none;
+    outline: 0;
+}
+
+/* 検索ボタン */
+#sbtn2 {
+    width: 50px;
+    border-radius: 0 4px 4px 0;
+    background: #8694a2;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#sbtn2:hover {
+    background: #92dbff;
+}
+
+#bugrMenu {
+    padding: 12px;
+    background: white;
+}
+/* ハンバーガーメニュー */
+#humCheck { 
+    display: none; 
+}
+
+#humOpen {
+    display: block;
+    width: 58px;
+    cursor: pointer;
+}
+
+#humOpen:hover {
+    opacity: 0.5;
+}
+
+#humOpen img {
+    display: block;
+}
+
+#humClose {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#humCheck:checked ~ nav {
+    transform: translateX(0); /* メニューを開く */
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#humCheck:checked ~ nav {
+    transform: translateX(0); /* メニューを表示 */
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+nav li:hover {
+    opacity: 0.5;
+}
+
+nav li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.yoko{display: flex;
+    align-items: center;
+}
