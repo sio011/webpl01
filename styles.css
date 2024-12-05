@@ -3,7 +3,7 @@ header {
     background-image: url('./img/2abge.png');
     background-size: contain; 
     background-repeat: no-repeat;
-    height: 150px;
+    height: 80px;
 }
 
 #form1 {
@@ -42,6 +42,9 @@ header {
     padding: 12px;
     background: white;
 }
+/*ログイン/新規登録*/
+    
+
 /* ハンバーガーメニュー */
 #humCheck { 
     display: none; 
@@ -138,7 +141,58 @@ nav li a {
         border-bottom: 2px solid #007dff;
     }
 
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: arial,sans-serif;
+        background-color: #f4f4f4;
+    }
+    /*横にスライドギャラリー*/
+    .container{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 20px;
+        background-color: #fff;
+        scrollbar-width: thin;
+        scrollbar-color: #888 #f4f4f4;
+    }
 
+    /*アイテムスタイル*/
+    .gallery-itemb {
+        min-width: 200px;  /*アイテムの幅*/
+        height: 200px;     /*アイテムの高さ*/
+        margin-right: 10px;  /*アイテム間のスペース*/
+        background-color: #3498db;/*背景色*/
+        color: #fff;/*文字*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 10px;/*角を丸く*/
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    }
+    .gallery-itemb img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+    .container::-webkit-scrollbar{
+        background: #8888;/*スクロールバー色*/
+        border-radius: 4px;/*スクロールバ＝丸み*/
+    }
+
+    .container::-webkit-scrollbar-track{
+        background: #f4f4f4;
+    }
+/*横文字*/
 .yoko{display: flex;
     align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    text-align: left;
 }

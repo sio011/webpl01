@@ -1,0 +1,46 @@
+/* フォントサイズとテキスト中央揃え */
+.fsize {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* コンテナのスタイル */
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 見出し2のスタイル */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"], 
+input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 送信ボタンのスタイル */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 送信ボタンのホバー時 */
+button[type="submit"]:hover {
+    background-color: #4Ca049;
+}

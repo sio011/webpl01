@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ログインフォーム -->
+        <form id="loginForm" onsubmit="event.preventDefault(); login();">
+            <p class="fsize">ログイン画面</p>
+            <input type="text" id="loginUsername" placeholder="ユーザー名" required />
+            <input type="password" id="loginPassword" placeholder="パスワード" required />
+            <button type="submit">ログイン</button>
+            <p>まだアカウントをお持ちでないですか？ <a href="#" onclick="toggleForm('registerForm');">新規登録</a></p>
+        </form>
+
+        <!-- 新規登録フォーム -->
+        <form id="registerForm" style="display: none;" onsubmit="event.preventDefault(); register();">
+            <p class="fsize">新規登録</p>
+            <input type="text" id="registerUsername" placeholder="ユーザー名" required />
+            <input type="email" id="registerEmail" placeholder="メールアドレス" required />
+            <input type="password" id="registerPassword" placeholder="パスワード" required />
+            <button type="submit">新規登録</button>
+            <p>すでにアカウントをお持ちですか？ <a href="#" onclick="toggleForm('loginForm');">ログイン</a></p>
+        </form>
+    </div>
+</body>
+</html>
