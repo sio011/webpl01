@@ -7,18 +7,24 @@
     <!-- Font Awesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
      <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com/da26b6b154.js" 
+         crossorigin="anonymous">
+     </script>
+
 </head>
 <body>
-    <li><a href="login.html">ログイン</a</li>
-    <li><a href="login.html">新規登録</a</li>
+
+   
+
+<header class="header">
     <div id="humMenu">
-        
+        <!--ハンバーガウィンド-->
         <input id="humCheck" type="checkbox">
         <label id="humOpen" for="humCheck">
-            <img src="./img/buger.png" alt="メニュー" width="34" height="28">
+            <i class="fa-solid fa-bars font" ></i> 
         </label>
         <label id="humClose" for="humCheck"></label>
-        <!--ハンバーガウィンドウ中身-->
+
         <nav>
             <ul class="inner">
 
@@ -36,9 +42,15 @@
             </ul>
         </nav>
     </div>
-
-
-    <header></header>
+        <div class="header-left">
+            <h1 class="yoko-header"> メープルパーク</h1>
+        </div>
+        <div class="header-right">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+</header>
     <form id="form1" action="file:///C:/KCGproject02/webpl01/web.HTML">
         <input id="sbox2" name="s" type="text" placeholder="キーワード入力" />
         <button id="sbtn2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -55,14 +67,12 @@
            
         </ul>
     </nav>
-
-   
-
+    
     <main>
 <p></p>
     </main>
 
-   <div class="yoko"><h2><p style="color: black">人気投稿</p></h2></div>
+   <div class="left"><h2><p style="color: black">人気投稿</p></h2></div>
    <!---人気投稿画像小さくしてる-->
    <section class="container">
     <div class="gallery-itemb">
@@ -98,6 +108,43 @@
 </section>
 
 <div class="left"><h2><p style="color: black;">人気急上昇</p></h2></div>
-
+<section class="container">
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像1">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画2">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像3">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像4">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像5">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像6">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像7">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像8">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像9">
+    </div>
+    <div class="gallery-itemb">
+        <img src="img/d.webp" alt="画像10">
+    </div>
+</section>
+    <h1></h1>
+    <div class="container-item01">
+      <!--大きさ調整後で-->
+        <img class="yoko" src="img/d.webp" alt="1">
+        
+    </div>
 </body>
 </html>

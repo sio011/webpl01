@@ -8,5 +8,8 @@
             }
         });   
 
+        function goback(){
+            history.back();
+        }
 
     
