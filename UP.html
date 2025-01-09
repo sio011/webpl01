@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>画像アップロード</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>画像アップロード</h1>
+    <form  method="post" enctype="multipart/form-data">
+        <label for="fileUpload">画像選択</label>
+        <input type="file" name="fileUpload" id="fileUpload" accept="image/*" required><br>
+
+        <label for="tags">タグ:</label>
+        <input type="text" name="tags" id="tags" placeholder="タグを入力" required><br>
+
+        <label for="original">オリジナル作品:</label>
+        <input type="checkbox" name="original" id="original"><br>
+
+        <input type="submit" value="アップロード">
+    </form>
+</body>
+</html>
