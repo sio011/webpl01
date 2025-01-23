@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pj">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Document</title>
+    <section class="container">
+        <!-- いいねされた画像を表示 -->
+        <div id="liked-images"></div>
+    </section>
+    
+    <script>
+        // localStorageから「いいね」された画像のIDを取得
+        const likedImages = JSON.parse(localStorage.getItem('likedImages')) || [];
+        const galleryItems = document.querySelectorAll('.gallery-itemb');
+    
+        likedImages.forEach((index) => {
+            const likedImage = galleryItems[index];
+            if (likedImage) {
+                // いいねされた画像を表示
+                const likedImagesContainer = document.getElementById('liked-images');
+                likedImagesContainer.appendChild(likedImage.cloneNode(true));
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

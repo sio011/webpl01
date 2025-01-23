@@ -239,6 +239,7 @@ nav li a {
 .yoko{  
         width: 50%;
         height: 50%;
+        margin: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -259,3 +260,91 @@ nav li a {
         font-size: 30px;
         color: #007dff;
     }
+
+/* フッター全体 */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center; /* フッター内の文字を中央寄せ */
+}
+
+/* フッターの内部コンテンツ */
+.footer-content {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center; /* 中央揃え */
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* リスト項目を中央揃え */
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #ff6347;
+}
+
+/* ソーシャルアイコン */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* アイコンを中央揃え */
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff6347;
+}
+
+/* フッターの下部 */
+.footer-bottom { 
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center; /* 中央揃え */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        margin: 0;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+    
